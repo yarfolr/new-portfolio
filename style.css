@@ -27,6 +27,9 @@ body {
 	font-style: normal;
 	font-weight: 400;
 }
+section{
+	    padding: 140px 0;
+}
 .container {
 	max-width: 1200px;
 	width: 100%;
@@ -121,9 +124,7 @@ body {
 	font-weight: 700;
 	font-size: 90px;
 }
-.about {
-    padding: 140px 0;
-}
+
 
 .about_text {
     font-size: 24px;
@@ -133,7 +134,6 @@ body {
 .title {
     display: inline-block;
     font-size: 48px;
-    padding-bottom: 60px;
 		position: relative;
 		font-weight: 700;
     font-size: 48px;
@@ -157,7 +157,6 @@ body {
 
 .skills {
     background-color:#F6F6F8 ;
-		padding: 140px 0;
 }
 .skills__inner{
 	display: flex;
@@ -195,5 +194,8 @@ body {
 }
 .skills__text{
 	width: 50px;
-	margin-right: 0px;
+	margin-right: 15px;
+}
+.services__text{
+	font-size:28px ;
 }
