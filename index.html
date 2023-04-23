@@ -14,7 +14,7 @@
 
 <body>
 	<section class="home" style="
-				background-image: url(./img/170264-zagreb-zdanie-okno-dorozhnoe_pokrytie-kirpich-3840x2160.jpg);
+				background-image: url(./img/petyh.jpg);
 			">
 		<div class="container">
 			<nav class="nav">
@@ -50,6 +50,7 @@
 	</section>
 	<section class="about">
 		<div class="container">
+			<div class='about__inner'>
 			<h3 class="title">Про мене</h3>
 			<ul class="about__list">
 				<li class="about__item">
@@ -69,9 +70,11 @@
 				</li>
 			</ul>
 		</div>
+		</div>
 	</section>
 	<section class="skills">
 		<div class="container">
+			<div class='skills__container'>
 			<h3 class="title">Навички</h3>
 			<div class="skills__inner">
 				<img class="portait" src="./img/portrait 2.jpg" />
@@ -96,6 +99,7 @@
 					</li>
 
 				</ul>
+			</div>
 			</div>
 		</div>
 	</section>
@@ -159,22 +163,22 @@
 		<div class='container'>
 			<ul class='achievement__list'>
 				<li class="achievement__item">
-					<img src='./img/Vector.svg' alt=''/>
+					<img src='./img/Vector.svg' alt='' />
 					<p>Виконаних робіт</p>
 					<h3>56</h5>
 				</li>
 				<li class="achievement__item">
-					<img src='./img/clients.svg' alt=''/>
+					<img src='./img/clients.svg' alt='' />
 					<p>Задоволених клієнтів</p>
 					<h3>23</h3>
 				</li>
 				<li class="achievement__item">
-					<img src='./img/coffee.svg' alt=''/>
+					<img src='./img/coffee.svg' alt='' />
 					<p>Випито чашок кави</p>
 					<h3>477</h3>
 				</li>
 				<li class="achievement__item">
-					<img src='./img/review.svg' alt=''/>
+					<img src='./img/review.svg' alt='' />
 					<p>Усього відгуків</p>
 					<h3>48</h3>
 				</li>
@@ -190,13 +194,48 @@
 					<p>
 						Зв'язатися зі мною можна, скориставшись контактною формою або за номером телефону, email, в соцмережах:
 					</p>
-					<a href='tel:+380970131786'>
+					<a class='contact__phone' href='tel:+380970131786'>
 						+38 (097) 013 17 86
 					</a>
+					<a class='contact__email' href="mail to:yarfolr@gmail.com">yarfolr@gmail.com
+					</a>
+					<ul class="contact__list">
+						<li class="contact__item">
+							<a href="#">
+								<img src="./img/instagram.svg" alt="#">
+							</a>
+						</li>
+						<li class="contact__item">
+							<a href="#">
+								<img src="./img/facebook (1) 1.svg" alt="#">
+							</a>
+						</li>
+						<li class="contact__item">
+							<a href="#">
+								<img src="./img/telegram.svg" alt="#">
+							</a>
+						</li>
+					</ul>
 				</div>
-				<div class='contacts__form'></div>
+				<form class="contact__form">
+					<div class="contact__form__inner">
+						<label class="contact__label">Ведіть своє ім'я
+							<input class="contact__input" type="text" placeholder="Ярослав" />
+						</label>
+						<label class="contact__label">Номер телефона
+							<input class="contact__input" type="text" placeholder="+3805011111" />
+						</label>
+					</div>
+					  <label class='contact__label'>
+							Ваше повідомлення
+							<textarea class='contact__textarea' placeholder='Текст вашого повідомлення'>
+							</textarea>
+						</label>
+						<button class='contact__button'>
+							Надіслати
+						</button>
+				</form>
 			</div>
-		</div>
 	</section>
 </body>
 <script src="./index.js"></script>
