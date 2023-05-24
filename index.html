@@ -12,9 +12,9 @@
 	<title>portfolio</title>
 </head>
 
-<body>
+<body src>
 	<section class="home" style="
-				background-image: url(./img/petyh.jpg);
+				background-image: url(./img/gyes.jpeg);
 			">
 		<div class="container">
 			<nav class="nav">
@@ -22,25 +22,31 @@
 					<img class="logo__img" src="./img/logo.svg" alt="logo" /></a>
 				<ul class="nav__list">
 					<li class="nav__item">
-						<a class="nav__link" href="#">Про мене</a>
+						<a class="nav__link" href="#about">Про мене</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="#">Навички</a>
+						<a class="nav__link" href="#skills">Навички</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="#">Послуги</a>
+						<a class="nav__link" href="#services">Послуги</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="#">Портфоліо</a>
+						<a class="nav__link" href="#" project>Портфоліо</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="#">Відгуки</a>
+						<a class="nav__link" href="#achievements">Відгуки</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="#">Контакти</a>
+						<a class="nav__link" href="#contat">Контакти</a>
 					</li>
 				</ul>
 			</nav>
+			<button class="menu-btn">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</button>
+
 			<div class="home__inner">
 				<p class="home__name">Привіт, я Ярослав Антонюк</p>
 				<h1 class="home__title">frontend- розробник</h1>
@@ -48,63 +54,64 @@
 			<a class="home__link" href="/"> Дивитись роботи </a>
 		</div>
 	</section>
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<div class='about__inner'>
-			<h3 class="title">Про мене</h3>
-			<ul class="about__list">
-				<li class="about__item">
-					Вітаю всіх на своєму сайті! Мене звуть Ярослав, я з Вінниці.
-					Займаюся фронтенд-розробкою понад рік. До розробки займався
-					нелюбимою справою, ходив на нелюбиму роботу, не міг зрозуміти, за що
-					взятися, щоб справа приносила задоволення і гроші, поки не наткнувся
-					на один цікавий курс.
-				</li>
-
-				<li class="about__item">
-					З того часу пройшов вогонь, воду та мідні труби. Навчання давалося
-					по-різному: десь легше, десь складніше. Щоденна робота над навичками
-					та старанність, з якою я підходив до навчання, вже через кілька
-					місяців принесли плоди – я взяв перше замовлення на фрілансі. З
-					відгуками клієнтів та прикладами робіт можна ознайомитись нижче.
-				</li>
-			</ul>
-		</div>
-		</div>
-	</section>
-	<section class="skills">
-		<div class="container">
-			<div class='skills__container'>
-			<h3 class="title">Навички</h3>
-			<div class="skills__inner">
-				<img class="portait" src="./img/portrait 2.jpg" />
-				<ul class="skills__list">
-					<li class="skills__item">
-						<p class="skills__text">HTML</p>
-						<span class="skills__rate">
-							<span class="skills__percent" style="width: 35%"></span>
-						</span>
-					</li>
-					<li class="skills__item">
-						<p class="skills__text">CSS</p>
-						<span class="skills__rate">
-							<span class="skills__percent" style="width: 35%"></span>
-						</span>
-					</li>
-					<li class="skills__item">
-						<p class="skills__text">JS</p>
-						<span class="skills__rate">
-							<span class="skills__percent" style="width: 35%"></span>
-						</span>
+				<h3 class="title">Про мене</h3>
+				<ul class="about__list">
+					<li class="about__item">
+						Вітаю всіх на своєму сайті! Мене звуть Ярослав, я з Вінниці.
+						Займаюся фронтенд-розробкою понад рік. До розробки займався
+						нелюбимою справою, ходив на нелюбиму роботу, не міг зрозуміти, за що
+						взятися, щоб справа приносила задоволення і гроші, поки не наткнувся
+						на один цікавий курс.
 					</li>
 
+					<li class="about__item">
+						З того часу пройшов вогонь, воду та мідні труби. Навчання давалося
+						по-різному: десь легше, десь складніше. Щоденна робота над навичками
+						та старанність, з якою я підходив до навчання, вже через кілька
+						місяців принесли плоди – я взяв перше замовлення на фрілансі. З
+						відгуками клієнтів та прикладами робіт можна ознайомитись нижче.
+					</li>
 				</ul>
 			</div>
+		</div>
+	</section>
+	<section class="skills" id='skills'>
+		<div class="container">
+			<div class='skills__container'>
+				<h3 class="title">Навички</h3>
+				<div class="skills__inner">
+					<img class="portait" src="./img/portrait 2.jpg" />
+					<ul class="skills__list">
+						<li class="skills__item">
+							<p class="skills__text">HTML</p>
+							<span class="skills__rate">
+								<span class="skills__percent" style="width: 60%"></span>
+							</span>
+						</li>
+						<li class="skills__item">
+							<p class="skills__text">CSS</p>
+							<span class="skills__rate">
+								<span class="skills__percent" style="width: 65%"></span>
+							</span>
+						</li>
+						<li class="skills__item">
+							<p class="skills__text">JS</p>
+							<span class="skills__rate">
+								<span class="skills__percent" style="width: 15%"></span>
+							</span>
+						</li>
+
+					</ul>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id='services'>
 		<div class="container">
+			<div class="services__inner"></div>
 			<h3 class="title">Послуги</h3>
 			<ul class='services__list'>
 				<li class='services__item'>
@@ -133,8 +140,9 @@
 				</li>
 			</ul>
 	</section>
-	<section class='project'>
+	<section class='project' id='project'>
 		<div class='container'>
+			<div class='project__inner'></div>
 			<h3 class="title">Мої Роботи</h3>
 			<ul class='project__list'>
 				<li class='project__item'>
@@ -161,82 +169,90 @@
 	</section>
 	<section class='achievements'>
 		<div class='container'>
-			<ul class='achievement__list'>
-				<li class="achievement__item">
-					<img src='./img/Vector.svg' alt='' />
-					<p>Виконаних робіт</p>
-					<h3>56</h5>
-				</li>
-				<li class="achievement__item">
-					<img src='./img/clients.svg' alt='' />
-					<p>Задоволених клієнтів</p>
-					<h3>23</h3>
-				</li>
-				<li class="achievement__item">
-					<img src='./img/coffee.svg' alt='' />
-					<p>Випито чашок кави</p>
-					<h3>477</h3>
-				</li>
-				<li class="achievement__item">
-					<img src='./img/review.svg' alt='' />
-					<p>Усього відгуків</p>
-					<h3>48</h3>
-				</li>
+			<div class="achievement__inner">
+				<ul class='achievement__list'>
+					<li class="achievement__item">
+						<img src='./img/works.svg' alt='' />
+						<p>Виконаних робіт</p>
+						<h3>56</h5>
+					</li>
+					<li class="achievement__item">
+						<img src='./img/clients.svg' alt='' />
+						<p>Задоволених клієнтів</p>
+						<h3>23</h3>
+					</li>
+					<li class="achievement__item">
+						<img src='./img/coffee.svg' alt='' />
+						<p>Випито чашок кави</p>
+						<h3>477</h3>
+					</li>
+					<li class="achievement__item">
+						<img src='./img/review.svg' alt='' />
+						<p>Усього відгуків</p>
+						<h3>48</h3>
+					</li>
 
-			</ul>
+				</ul>
+			</div>
 		</div>
 	</section>
-	<section class='contacts'>
+	<section class='contacts' id='contacts'>
 		<div class='container'>
-			<h3 class='title'>Контакти</h3>
-			<div class='contacts__inner'>
-				<div class='contacts__info'>
-					<p>
-						Зв'язатися зі мною можна, скориставшись контактною формою або за номером телефону, email, в соцмережах:
-					</p>
-					<a class='contact__phone' href='tel:+380970131786'>
-						+38 (097) 013 17 86
-					</a>
-					<a class='contact__email' href="mail to:yarfolr@gmail.com">yarfolr@gmail.com
-					</a>
-					<ul class="contact__list">
-						<li class="contact__item">
-							<a href="#">
-								<img src="./img/instagram.svg" alt="#">
-							</a>
-						</li>
-						<li class="contact__item">
-							<a href="#">
-								<img src="./img/facebook (1) 1.svg" alt="#">
-							</a>
-						</li>
-						<li class="contact__item">
-							<a href="#">
-								<img src="./img/telegram.svg" alt="#">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<form class="contact__form">
-					<div class="contact__form__inner">
-						<label class="contact__label">Ведіть своє ім'я
-							<input class="contact__input" type="text" placeholder="Ярослав" />
-						</label>
-						<label class="contact__label">Номер телефона
-							<input class="contact__input" type="text" placeholder="+3805011111" />
-						</label>
+			<div class="contact__container">
+				<h3 class='title'>Контакти</h3>
+				<div class='contacts__inner'>
+					<div class='contacts__info'>
+						<p>
+							Зв'язатися зі мною можна, скориставшись контактною формою або за номером телефону, email, в соцмережах:
+						</p>
+						<a class='contact__phone' href='tel:+380970131786'>
+							+38 (097) 013 17 86
+						</a>
+						<a class='contact__email' href="mail to:yarfolr@gmail.com">yarfolr@gmail.com
+						</a>
+						<ul class="contact__list">
+							<li class="contact__item">
+								<a href="#">
+									<img src="./img/instagram.svg" alt="#">
+								</a>
+							</li>
+							<li class="contact__item">
+								<a href="#">
+									<img src="./img/facebook (1) 1.svg" alt="#">
+								</a>
+							</li>
+							<li class="contact__item">
+								<a href="#">
+									<img src="./img/telegram.svg" alt="#">
+								</a>
+							</li>
+						</ul>
 					</div>
-					  <label class='contact__label'>
-							Ваше повідомлення
-							<textarea class='contact__textarea' placeholder='Текст вашого повідомлення'>
-							</textarea>
+					<form class="contacts__form">
+						<div class="contact__form-inner">
+							<label for="#" class="contact__label">
+								Ваше ім'я
+								<input class="contact__input" placeholder="Ярослав" type="text" />
+							</label>
+							<label for="#" class="contact__label">
+								Номер телефону
+								<input class="contact__input" placeholder="+38 (097) 059 3621" type="text" />
+							</label>
+						</div>
+						<label class="contact__label">Ваше сповіщення
+							<textarea class="contact__textarea" placeholder="Текст вашего сповіщення"></textarea>
 						</label>
-						<button class='contact__button'>
-							Надіслати
-						</button>
-				</form>
+						<button class="contact__button">Відправити</button>
+					</form>
+
+				</div>
 			</div>
 	</section>
+	<section class="footer" id='footer';>
+      <div class="container">
+        <img class="footer__logo" src="/img/logo.svg">
+      </div>
+    </section>
 </body>
 <script src="./index.js"></script>
 
