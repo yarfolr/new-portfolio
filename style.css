@@ -272,13 +272,15 @@ body {
 	.skills__inner {
 		align-items: initial;
 	}
-
+	.portait{
+		display: flex;
+		
+	}
 }
 
 
 
 .portait {
-	max-width: 350px;
 	margin-bottom: 50px;
 	width: 100%;
 }
