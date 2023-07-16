@@ -256,7 +256,12 @@ body {
 	padding: 150px 0;
 }
 
+.skills__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
+}
 @media screen and (max-width:992px) {
 	.skills{
 		padding: 90px 0;
@@ -270,12 +275,7 @@ body {
 
 }
 
-.skills__inner {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 
-}
 
 .portait {
 	max-width: 350px;
@@ -335,6 +335,7 @@ body {
 		flex-direction: column;
 		align-items: center;
 		gap: 50px;
+		padding: 40px;
 	}
 
 	.servants__item {
