@@ -1,4 +1,3 @@
-
 :root {
 	--main-color: green;
 	--second-color: red;
@@ -32,7 +31,7 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	scroll-behavior: smooth;
-	
+
 }
 
 .container {
@@ -88,7 +87,7 @@ body {
 }
 
 .nav__link:hover {
-	color: darkcyan;
+	color: rgb(50, 212, 179);
 }
 
 .home__inner {
@@ -264,8 +263,9 @@ body {
 	align-items: center;
 
 }
+
 @media screen and (max-width:992px) {
-	.skills{
+	.skills {
 		padding: 90px 0;
 	}
 
@@ -274,9 +274,11 @@ body {
 	.skills__inner {
 		align-items: initial;
 	}
-	.portait{
+
+	.portait {
 		display: flex;
 		margin-bottom: 50px;
+		margin-right: 0;
 	}
 }
 
@@ -291,6 +293,8 @@ body {
 	max-width: 600px;
 	width: 100%;
 	gap: 85px;
+	display: flex;
+	flex-direction: column;
 }
 
 @media screen and (max-width:768px) {
@@ -305,7 +309,6 @@ body {
 .skills__item {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 84px;
 }
 
 .skills__rate {
@@ -325,11 +328,13 @@ body {
 .skills__text {
 	width: 50px;
 	margin-right: 15px;
+	color: rgb(50, 212, 179);
+	font-weight: bold;
 }
 
 @media screen and (max-width:992px) {
 	.services {
-		padding-top: 90px ;
+		padding-top: 90px;
 	}
 
 
@@ -429,8 +434,8 @@ body {
 
 @media screen and (max-width:992px) {
 	.project__list {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr)
 	}
 }
 
@@ -473,14 +478,17 @@ body {
 
 @media screen and (max-width:992px) {
 	.achievement__list {
-		display: flex;
-		flex-direction: column;
+		display: grid;
 		align-items: center;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 45px;
 	}
 }
-.contacts{
+
+.contacts {
 	margin-bottom: 140px;
 }
+
 .contact__container {
 	padding-bottom: 217px;
 }
@@ -547,13 +555,14 @@ body {
 }
 
 .contact__form-inner {
-	display: flex;
+	display: grid;
 	margin-bottom: 30px;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
 }
 
-.contact__label:first-child {
-	margin-right: 30px;
-}
+
+
 
 .contact__textarea {
 	background-color: #F6F6F8;
@@ -585,12 +594,28 @@ body {
 	.contacts__form {
 		margin-bottom: 30px;
 	}
-	.contact__label{
+
+	.contact__label {
 		display: flex;
 		flex-direction: column;
+		
+	}
+
+	.contact__textarea {
+		min-height: 150px;
+		max-width: 100%;
 	}
 }
-
+@media screen and (max-width:768px) {
+	.contact__form-inner{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		
+	}
+	.contact__input{
+		max-width: 100%;
+	}
+}
 
 .footer {
 	width: 100%;
