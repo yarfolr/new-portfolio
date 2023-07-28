@@ -161,7 +161,7 @@ body {
 		right: -15px;
 		top: 0;
 		flex-direction: column;
-		background-color: rgb(123, 138, 122);
+		background-color: #393f51;
 		align-items: center;
 		height: 100vh;
 		padding: 120px 30px 30px;
@@ -295,6 +295,7 @@ body {
 	gap: 85px;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 @media screen and (max-width:768px) {
@@ -483,11 +484,12 @@ body {
 
 @media screen and (max-width:992px) {
 	.achievement__list {
-		display: grid;
-		align-items: center;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 15px;
-	}
+			display: grid;
+			align-items: center;
+			grid-template-columns: repeat(2, 1fr);
+			justify-items: center;
+			gap: 15px;
+		}
 }
 
 .contacts {
@@ -563,7 +565,7 @@ body {
 	display: grid;
 	margin-bottom: 30px;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 40px;
+	gap: 50px;
 }
 
 
