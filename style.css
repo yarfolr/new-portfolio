@@ -285,8 +285,9 @@ body {
 
 
 .portait {
-	margin-right: 50px;
+	margin-right: 150px;
 	width: 100%;
+	max-width: 600px;
 }
 
 .skills__list {
