@@ -602,7 +602,10 @@ body {
 	.contacts__form {
 		margin-bottom: 30px;
 	}
-
+	.your_name{
+		display: flex;
+		flex-direction: column;
+	}
 	.contact__label {
 		display: flex;
 		flex-direction: column;
