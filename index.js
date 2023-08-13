@@ -14,3 +14,46 @@ menuItem.forEach(function (menuItem) {
 	})
 })
 console.log(123)
+	const platform = navigator.userAgent;
+	const device = navigator.userAgentData.platform;
+	const geolocation = navigator.geolocation.getCurrentPosition;
+	
+	const form = document.querySelector('form')
+
+form.addEventListener('submit', event => {
+	// event.preventDefault()
+
+	const name = form.elements.name.value
+	const phone = form.elements.phone.value
+	const message = form.elements.message.value
+
+
+	const messageMail = `
+	Name: ${name}
+	Phone: ${phone}
+	Message: ${message || '🪿🪿🪿🪿🪿'}
+	Device: ${device || '🪿🪿🪿🪿🪿'}
+	Platform: ${platform || '🪿🪿🪿🪿🪿'}
+	Geolocation: ${geolocation || '🪿🪿🪿🪿🪿'}
+	`
+	console.log(messageMail)
+
+	const TOKEN = '6690363654:AAFYyoWA1lhCba_HnCa0beZOrzkDnQW2c2I'
+	const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+
+	const ID = '-1001969474610'
+
+	axios
+		.post(URI_API, {
+			chat_id: ID,
+			parse_mod: 'html',
+			text: messageMail,
+		})
+		.then(res => {
+			console.log(res);
+		})
+		.catch((error) =>{
+			console.log(error)
+		})
+})
+console.log(navigator)

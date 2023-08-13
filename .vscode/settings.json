@@ -3,3 +3,4 @@
 	"liveServer.settings.donotShowInfoMsg": true,
 	"liveServer.settings.port": 5501
 }
+const form = document.queryselector("form")
