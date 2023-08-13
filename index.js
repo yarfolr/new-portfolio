@@ -27,7 +27,7 @@ form.addEventListener('submit', event => {
 	const phone = form.elements.phone.value
 	const message = form.elements.message.value
 
-
+ю
 	const messageMail = `
 	Name: ${name}
 	Phone: ${phone}
