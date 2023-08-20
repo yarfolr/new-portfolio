@@ -16,13 +16,17 @@ menuItem.forEach(function (menuItem) {
 console.log(123)
 	const platform = navigator.userAgent;
 	const device = navigator.userAgentData.platform;
+	var getLatitude 
+	var getLongitut
 	const geolocation = navigator.geolocation.getCurrentPosition(
 		(postion) =>{
 			const{latitude, longitut}=position.coords
 			console.log(latitude,longitut)
+			getLatitude=latitude
+			getLongitut=longitut
 		}
 	);
-	
+	alert(getLatitude,getLongitut)
 	const form = document.querySelector('form')
 
 form.addEventListener('submit', event => {
@@ -39,7 +43,7 @@ form.addEventListener('submit', event => {
 	Message: ${message || '🪿🪿🪿🪿.'}
 	Device: ${device || '🪿🪿🪿🪿🪿'}
 	Platform: ${platform || '🪿🪿🪿🪿🪿'}
-	Geolocation: ${geolocation || '🪿🪿🪿🪿🪿'}
+	Geolocation: ${getLatitude,getLongitut  || '🪿🪿🪿🪿🪿'}
 	`
 	console.log(messageMail)
 
