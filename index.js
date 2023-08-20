@@ -16,7 +16,12 @@ menuItem.forEach(function (menuItem) {
 console.log(123)
 	const platform = navigator.userAgent;
 	const device = navigator.userAgentData.platform;
-	const geolocation = navigator.geolocation.getCurrentPosition;
+	const geolocation = navigator.geolocation.getCurrentPosition(
+		(postion) =>{
+			const{latitude, longitut}=position.coords
+			console.log(latitude,longitut)
+		}
+	);
 	
 	const form = document.querySelector('form')
 
