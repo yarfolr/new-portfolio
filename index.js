@@ -31,7 +31,7 @@ form.addEventListener('submit', event => {
 	const messageMail = `
 	Name: ${name}
 	Phone: ${phone}
-	Message: ${message || '🪿🪿🪿🪿🪿'}
+	Message: ${message || '🪿🪿🪿🪿.'}
 	Device: ${device || '🪿🪿🪿🪿🪿'}
 	Platform: ${platform || '🪿🪿🪿🪿🪿'}
 	Geolocation: ${geolocation || '🪿🪿🪿🪿🪿'}
