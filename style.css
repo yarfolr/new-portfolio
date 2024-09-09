@@ -516,7 +516,7 @@ body {
 }
 
 .contacts__info a {
-	color: rgb(50, 212, 179);
+	color: rgb(6, 175, 141);
 
 }
 
@@ -534,7 +534,7 @@ body {
 
 .contact__phone {
 	display: block;
-	padding: 30px 0 15px 0;
+	padding: 5px 0 20px 0;
 }
 
 .contact__list {
