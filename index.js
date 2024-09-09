@@ -43,7 +43,7 @@ form.addEventListener('submit', event => {
 	Message: ${message || '🪿🪿🪿🪿.'}
 	Device: ${device || '🪿🪿🪿🪿🪿'}
 	Platform: ${platform || '🪿🪿🪿🪿🪿'}
-	Geolocation: ${getLatitude,getLongitut  || '🪿🪿🪿🪿🪿'}
+	Geolocation: ${getLatitude,getLongitut  || ''}
 	`
 	console.log(messageMail)
 
